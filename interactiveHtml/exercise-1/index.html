@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Profil</h1>
+
+        <p>Hier können Sie Ihre Adress-Angaben einsehen und anpassen</p>
+        
+
+    <form>
+        <ul class="wrapper-1">
+            <h2>Persönliche Daten</h2>
+            <li>
+                <label for="title">Title</label> <input type="text" id="title" placeholder="Dr.hc">
+            </li>
+            <li>
+                <label for="vorname">Vorname</label> <input type="text" id="vorname" placeholder="Peter">
+            </li>
+            <li>
+                <label for="nachname">Nachname</label> <input type="text" id="nachname" placeholder="Muster">
+            </li>
+
+            <li>
+                <label>Geschlecht</label>
+
+                <label for="woman">W</label>
+                <input type="radio" name="geschlecht" id="woman">
+                <label for="man">M</label>
+                <input type="radio" name="geschlecht" id="man">
+            </li>
+
+            <li>
+                <label>Sprache</label>
+
+                <label for="deutsch">DE</label>
+                <input type="radio" id="deutsch" name="sprache">
+
+                <label for="französisch">FR</label>
+                <input type="radio" name="sprache" id="französisch">
+
+                <label for="italienisch">IT</label>
+                <input type="radio" name="sprache" id="italienisch">
+            </li>
+        </ul>
+
+        <ul class="wrapper-2">
+            <h2>Kontaktdaten</h2>
+            <li>
+                <label for="telefon">Telefon</label>
+                <input type="tel" id="telefon" required>
+            </li>
+            <li>
+                <label for="mobile">Mobile</label>
+                <input type="tel" placeholder="optional" id="mobile">
+            </li>
+            <li>
+                <label for="hauptnummer">Hauptnummer</label>
+                <input type="tel" placeholder="optional" id="hauptnummer">
+            </li>
+            <li>
+                <label for="fax">Fax</label>
+                <input type="tel" placeholder="optional" id="fax">
+            </li>
+            <li>
+                <label for="mail">Mail 1</label>
+                <input type="email" id="mail" required>
+            </li>
+            <li>
+                <label for="mail2">Mail 2</label>
+                <input type="email" id="mail2">
+            </li>
+        </ul>
+        <ul class="wrapper-3">
+            <h2>Adressdaten</h2>
+            <li>
+                <label for="firma">Firma</label>
+                <input type="text" id="firma" required>
+            </li>
+            <li>
+                <label for="zusatzFirma">ZusatzFirma</label>
+                <input type="text" id="zusatzFirma" placeholder="optional">
+            </li>
+            <li>
+                <label for="homepage">Homepage</label>
+                <input type="text" id="homepage" placeholder="optional">
+            </li>
+            <li>
+                <label for="addresse">Adresse/HausNr</label>
+                <input type="text" id="addresse" placeholder="Musterstrasse">
+                <input type="number" id="addresse" placeholder="33"> 
+            </li>
+            <li>
+                <label for="zusatzAdresse">Zusatz Adresse</label>
+                <input type="text" id="zusatzAdresse" placeholder="optional">
+            </li>
+            <li>
+                <label for="postfach">Postfach</label>
+                <input type="text" id="postfach" placeholder="optional">
+            </li>
+            <li>
+                <label for="plz">PLZ/Ort</label>
+                <input type="number" id="plz" placeholder="8800">
+                <input type="text" id="Musterstadt">
+            </li>
+            <li>
+                <label for="kanton">Kanton/Land</label>
+                <input type="text" id="kanton" placeholder="ZH">
+                <input type="text" id="kanton" placeholder="Schweiz">
+            </li>
+
+
+
+        </ul>
+
+    </form>
+</body>
+</html>
