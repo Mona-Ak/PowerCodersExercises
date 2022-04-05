@@ -1,0 +1,20 @@
+.wrapper {
+    background-color: whitesmoke;
+    list-style-type: none;
+    padding: 0;
+    border-radius: 3px;
+  }
+  .form-row {
+    display: flex;
+    padding: .5em;
+  }
+  .form-row > label {
+    padding: .5em 1em .5em 0;
+    flex: 1 ;
+  }
+  .form-row > input {
+    flex: 3;
+  }
+  .form-row > input{
+    padding: .5em;
+  }
