@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Profil</h1>
+    <div class="container">
+        <h1>Profil</h1>
 
         <p>Hier können Sie Ihre Adress-Angaben einsehen und anpassen</p>
         
@@ -29,23 +30,25 @@
             <li>
                 <label>Geschlecht</label>
 
-                <label for="woman">W</label>
                 <input type="radio" name="geschlecht" id="woman">
-                <label for="man">M</label>
+                <label class="radios" for="woman">W</label>
+                
                 <input type="radio" name="geschlecht" id="man">
+                <label class="radios" for="man">M</label>
+                
             </li>
 
             <li>
                 <label>Sprache</label>
 
-                <label for="deutsch">DE</label>
                 <input type="radio" id="deutsch" name="sprache">
-
-                <label for="französisch">FR</label>
+                <label class="radios" for="deutsch">DE</label>
+                                
                 <input type="radio" name="sprache" id="französisch">
+                <label class="radios" for="französisch">FR</label>
 
-                <label for="italienisch">IT</label>
                 <input type="radio" name="sprache" id="italienisch">
+                <label class="radios" for="italienisch">IT</label>
             </li>
         </ul>
 
@@ -92,8 +95,10 @@
             </li>
             <li>
                 <label for="addresse">Adresse/HausNr</label>
-                <input type="text" id="addresse" placeholder="Musterstrasse">
-                <input type="number" id="addresse" placeholder="33"> 
+                <div class="field">
+                    <input type="text" class="fieldText" id="addresse" placeholder="Musterstrasse">
+                    <input type="number" class="fieldNumber" placeholder="33"> 
+                </div>
             </li>
             <li>
                 <label for="zusatzAdresse">Zusatz Adresse</label>
@@ -104,9 +109,11 @@
                 <input type="text" id="postfach" placeholder="optional">
             </li>
             <li>
-                <label for="plz">PLZ/Ort</label>
-                <input type="number" id="plz" placeholder="8800">
-                <input type="text" id="Musterstadt">
+                <label class="plzColLabel" for="plz">PLZ/Ort</label>
+                <div class="plzCol">
+                    <input type="number" id="plz" placeholder="8800">
+                    <input type="text" id="Musterstadt">
+                </div>
             </li>
             <li>
                 <label for="kanton">Kanton/Land</label>
@@ -119,5 +126,8 @@
         </ul>
 
     </form>
+
+    </div>
+   
 </body>
 </html>
