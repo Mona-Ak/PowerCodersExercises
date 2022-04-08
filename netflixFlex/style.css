@@ -1,0 +1,125 @@
+html{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+*{
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+}
+body, ul{
+    margin: 0;
+}
+header{
+    display: grid;
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,0.7) 0%, rgba(44,46,47,0.7) 31%, rgba(37, 38, 38, 0.7) 75%), url("./image/bg.jpeg");
+    height: 100vh;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+nav ul{
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    
+}
+
+nav li:first-child{
+    flex-grow: 1;
+}
+nav img{
+    max-width: 13.4pc;
+}
+nav li{
+    padding: 0 1.5rem;
+}
+
+label[for=lang], .visuallyhidden{
+    border: 0;
+    clip: rect(0,0,0,0);
+    clip: rect(0,0,0,0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+select{
+
+    border: #ffffff;
+    background: transparent;
+    padding: 1rem 1rem;
+
+}
+option{
+    background-color: gray;
+}
+li:last-child a, button{
+    background-color: #f40612;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    padding: 1rem;
+    border:none;
+}
+
+button:hover{
+    cursor: pointer;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+}
+h1{
+    font-size: 5rem;
+    max-width: 20ch;
+}
+h2{
+    font-size: 3rem;
+    font-weight: normal;
+    margin: 0;
+}
+label{
+    position: absolute;
+    color: gray;
+    top: 3.5rem;
+    left: 2.5rem;
+    font-size: 1.6rem;
+    pointer-events: none;
+}
+input:focus + label{
+    top: 1.5rem;
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: all 200ms linear ;
+}
+
+fieldset{
+    position: relative;
+    border: none;
+    display: flex;
+}
+input{
+    width: 45rem;
+    padding: 2rem 1rem;
+}
+
+
+button{
+    border-radius: 0;
+    font-size: 3rem;
+    padding: 2rem;
+}
