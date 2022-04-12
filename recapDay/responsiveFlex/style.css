@@ -1,0 +1,37 @@
+html{
+    box-sizing: border-box;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+*,*::before,*::after{
+    box-sizing: inherit;
+}
+
+h1{
+    font-weight: bold;
+    font-size: 2.4rem; 
+}
+
+/* using Flexbox */
+
+main{
+    display: flex;
+    border: 0.3rem solid #56626E;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+}
+section{
+    background-color: #50a1af;
+    border-radius: 5px;
+    color: white;
+    flex-basis: 14rem;
+    flex-grow: 1;
+    font-weight: bold;
+    margin: 0.6rem;
+    padding: 0.8rem;
+}
+
