@@ -17,7 +17,7 @@ h1{
 
 /* using Flexbox */
 
-main{
+/* main{
     display: flex;
     border: 0.3rem solid #56626E;
     justify-content: space-around;
@@ -33,5 +33,5 @@ section{
     font-weight: bold;
     margin: 0.6rem;
     padding: 0.8rem;
-}
+} */
 
