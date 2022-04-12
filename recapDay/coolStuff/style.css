@@ -14,8 +14,9 @@ body{
     height: 100%;
 }
 
+/* using flex */
 
-main{
+/* main{
     background-color: #ffffff;
     margin: 3rem;
     display: flex;
@@ -25,7 +26,6 @@ main{
 h1{
     color: #7f7f7f;
     text-transform: uppercase;
-    /* padding: 4rem 0 2rem 0; */
     font-size: 2.5rem;
     margin-top: 4rem;
 }
@@ -36,8 +36,6 @@ span{
 ul{
     display: flex;
     flex-wrap: wrap;
-    /* margin: 2rem; */
-    
 }
 
 
@@ -45,7 +43,6 @@ li{
     list-style-type: none;
     flex-basis: 40%;
     flex-grow: 1;
-    /* border: 2px solid red; */
     margin: 2rem;
 }
 div{
@@ -69,4 +66,7 @@ a{
     font-size: 20px;
     margin-top: 2rem;
     margin-bottom: 4rem;
-}
+} */
+
+
+/* using grid */
