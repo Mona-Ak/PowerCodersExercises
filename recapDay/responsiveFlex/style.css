@@ -35,3 +35,34 @@ section{
     padding: 0.8rem;
 } */
 
+
+/* using Grid */
+
+main{
+    border: 0.3rem solid #56626E;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+}
+
+section{
+    background-color: #50a1af;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    margin:0.5rem;
+    padding: 0.8rem;
+}
+
+@media (min-width:890px) and ( max-width:1180px){
+    main{
+
+        grid-template-areas:
+        'A B C' 
+        'D D D';
+    }
+    
+    section:nth-of-type(4){
+        grid-area: D;
+    }
+}
