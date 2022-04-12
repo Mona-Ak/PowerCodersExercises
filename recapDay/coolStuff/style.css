@@ -70,3 +70,56 @@ a{
 
 
 /* using grid */
+
+main{
+    background-color: #ffffff;
+    margin: 3rem;
+    display: grid;
+}
+
+ul{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(48%,1fr));
+    grid-gap: 2rem;
+    margin: 2rem;
+    padding: 0;
+}
+
+h1{
+    color: #7f7f7f;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    margin-top: 4rem;
+}
+span{
+    color: black;
+}
+li{
+    list-style-type: none;
+}
+div{
+    color: #e4e4e4;
+    background-color: black;
+    padding: 15%;
+    font-size: 50px;
+}
+h2{
+    color: #7f7f7f;
+    text-transform: uppercase;
+}
+
+
+
+a{
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    padding: 1.5rem 6rem;
+    text-transform: uppercase;
+    font-size: 20px;
+    margin: 2rem auto 4rem auto;
+    width: 50%;
+} 
+
+
