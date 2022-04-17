@@ -1,0 +1,31 @@
+
+Allow the user to input digits, afterward sort and print them in numerical order.
+
+constrants:
+1.we have to add digits.
+2.print them in order
+
+steps:
+
+1. input which accept numbers not text
+2. store the number in a place
+3. do operation to find the smallest to greatest
+4. save to the new place 
+5. display it on webpage
+
+INITIALIZE input as input 
+INITIALIZE my number as empty array
+INITIALIZE display as display
+<!-- access the value of input and store it to the array -->
+array.push(input.value);
+<!-- use array method to sort the digits -->
+array.sort(input.value)
+<!-- using loop to print the values in array to the page -->
+for(let i = 0; i < array.length; i++){
+    dispaly.innerHTML = array[i]
+}
+
+
+
+
+
