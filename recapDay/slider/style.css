@@ -1,0 +1,46 @@
+html{
+    box-sizing: border-box;
+    height: 100%;
+
+}
+
+*, *::before,*::after{
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+}
+ul{
+    display: flex;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+
+li{
+    list-style-type: none;
+    text-align: center;
+    font-size: 7rem;
+    padding: 11rem  40rem;
+    
+}
+
+section{
+    padding: 2rem;
+    text-align: center;    
+}
+
+
+#li1{
+    background-color: #444772;
+}
+#li2{
+    background-color: #1a7517;
+}
+#li3{
+    background-color: #444772;
+}
+#li4{
+    background-color: #1a7517;
+}
+#li5{
+    background-color: #444772;
+}
