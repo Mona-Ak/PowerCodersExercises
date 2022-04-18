@@ -1,4 +1,4 @@
-
+<!-- 
 Allow the user to input digits, afterward sort and print them in numerical order.
 
 constrants:
@@ -17,13 +17,35 @@ INITIALIZE input as input
 INITIALIZE my number as empty array
 INITIALIZE display as display
 <!-- access the value of input and store it to the array -->
-array.push(input.value);
+<!-- array.push(input.value); -->
 <!-- use array method to sort the digits -->
-array.sort(input.value)
+<!-- array.sort(input.value) -->
 <!-- using loop to print the values in array to the page -->
-for(let i = 0; i < array.length; i++){
+<!-- for(let i = 0; i < array.length; i++){
     dispaly.innerHTML = array[i]
-}
+} -->
+
+<!-- right answer -->
+
+SortNumbers
+    INITIALIZE userInput AS String;
+    INITIALIZE digitsList AS List;
+    INITIALIZE output AS String;
+    INITIALIZE counter;
+
+    PROMPT "Please input minimum 2 digits and 
+        maximum 10 digits (0-9), separated by commas" AS userInput
+
+    SPLIT userInput AT THE SEPERATOR "," TO digitsList
+    // check for spaces, are there commas in the string
+
+    FOR EACH item OF digitsList
+        IF not a digit
+            PROMPT ("Please make sure that you only add single digits (0-9)");
+        END IF
+    END FOR EACH                            
+
+END SortNumbers
 
 
 
