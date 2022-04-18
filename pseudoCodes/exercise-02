@@ -1,0 +1,19 @@
+Allow the user to input numbers, add them and print the result.
+
+INITIALIZE userInput AS String;
+INITIALIZE numbersList AS List;
+INITIALIZE output AS String;
+INITIALIZE counter As 0;
+
+prompt "please add number and seperate them with comma" As userInput
+SPLIT numbers at the SEPERATOR "," As numberList
+For items of numberList
+    IF numberList is not String
+        counter = counter + numberListItem
+    End IF
+End For
+
+
+
+
+
