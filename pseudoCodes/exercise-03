@@ -1,0 +1,23 @@
+Allow the user to input numbers, substract the smaller from the bigger number and print the result.
+
+1.inputing the numbers
+2.seperate the numbers
+3.store the numbers in a place
+4.sort the numbrs from bigger to smller 
+5.substract them in order
+6.print them at display
+
+INITIALIZE usrInput As String
+INITIALIZE numberList As List
+INITIALIZE display As String
+
+Prompt "please add your number and seperate them with commas" As String
+SPIT number at seperator comma "," As numberList
+CONVERT numberList from String to number
+SORT numberList from bigger to smaller
+For items at numberList
+    If numberList is number
+        numberList = numberList[firstitme] - numberList[seconditem]
+        PRINT numberList into display
+    End If
+End For
