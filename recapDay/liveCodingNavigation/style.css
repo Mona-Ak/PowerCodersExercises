@@ -15,17 +15,16 @@ body{
 
 ul{
     display: flex;
+    flex-basis: 200px;
     background-color: #d2e7f2;
     justify-content: space-around;
     margin: 0;  
     height: 100%;
-    z-index: 1;
     top: 0;
     left: 0;
-    overflow-x: hidden;
     transition: 0.5s;
 }
-li{
+li{      
     list-style-type: none;
     flex-grow: 1;
     padding: 1.5rem;
