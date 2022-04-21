@@ -44,43 +44,46 @@ let btn = document.querySelector('button');
 
 // *************SWITCH***********************
 
-for (let i = 0; i < daysList.length; i++) {
-    days.push(daysList[i].textContent); 
-    console.log()
-}
-for (let i = 0; i < days.length; i++) {
-    console.log(days[i])
-    
-    switch(days[i]){
-        case 'Monday':
-        console.log('this is mon');
-        break;
-        case 'Tuesday':
-        console.log('this is tue')
-        break;
-        case 'Thursday':
-        console.log('this is thu')
-        break;
-        case 'Wednesday':
-        console.log('this is mon')
-        break;
-        case 'Friday':
-        console.log('this is mon')
-        break;
-        case 'Saturday':
-        console.log('this is mon')
-        break;
-        case 'Sonday':
-        console.log('this is mon')
-        break;
-        default :
-        // console.log('no sorry');
-        break;
+btn.addEventListener('click', ()=>{
+    for (let i = 0; i < daysList.length; i++) {
+        days.push(daysList[i].textContent); 
+    }
+    for (let i = 0; i < days.length; i++) {
+        
+        switch(days[i]){
+            case 'Monday':
+            daysList[i].append('-----Montag');
+            break;
+            case 'Tuesday':
+            daysList[i].append('-----Dienstag');
+            break;
+            case 'Thursday':
+            daysList[i].append('-----Mitwoch');
+            break;
+            case 'Wednesday':
+            daysList[i].append('-----Donnerstag');
+            break;
+            case 'Friday':
+            daysList[i].append('-----Freitag');
+            break;
+            case 'Saturday':
+            daysList[i].append('-----Samstag');
+            break;
+            case 'Sunday':
+            daysList[i].append('-----Sontag');
+            break;
+            default :
+            console.log('the day is not exist');
+            break;
+            
+        }
+       
         
     }
-   
-    
-}
+
+})
+
+
 
 
 
