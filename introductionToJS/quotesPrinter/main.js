@@ -6,8 +6,8 @@
  let displayQuote = document.querySelector('p'); 
  let displayAuthor = document.querySelector('cite');
 
- displayQuote.innerHTML = `${quote}`;
- displayAuthor.innerHTML = `${author}`;
+ displayQuote.innerText = `${quote}`;
+ displayAuthor.innerText = `${author}`;
 
  
 
