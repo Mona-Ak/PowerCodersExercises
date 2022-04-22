@@ -8,6 +8,8 @@ let fortune = {
     job : ['programmer', 'data analyst', 'engineer', 'computer science', 'lawyer']
 }
 
+console.log(fortune.location[0])
+
 let arr = ['Mona', 'Benita', 'Alisha', 'Hannah', 'Betina'];
 
 // console.log(arr[Math.floor(Math.random(arr.length )*5)])
