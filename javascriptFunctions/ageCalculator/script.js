@@ -5,7 +5,7 @@ let year = date.getFullYear();
 let month = date.getMonth();
 let day = date.getDate();
 // let myDay = prompt('add you day of birth');
-// let myMonth = prompt('add you month of birth');
+let myMonth = prompt('add you month of birth');
 let myYear = prompt('add your year of birth');
 let display = document.querySelector('p');
 
@@ -18,7 +18,7 @@ let display = document.querySelector('p');
 //     if(month < m ){
 //         currentMonth = month - m  + 12 +1;
 //         currentYear - 1;
-//         console.log('this is month' + [currentMonth]);
+//         console.log('this is month' + currentMonth);
 //     }else{
 //         currentMonth = month - m ;
 //     }
@@ -49,6 +49,21 @@ let yearCalculator = (y)=>{
 }
 
 yearCalculator(myYear);
+
+let monthCalculator = (m , y)=>{ 
+    let currentMonth;
+    if(month < m ){
+        currentMonth = month - m  + 12 +1;
+        currentYear = y - 1;
+    }else{
+        currentMonth = month - m ;
+        console.log(currentMonth);
+    }
+    console.log(currentMonth);
+    
+}
+
+monthCalculator(myMonth, yearCalculator(myYear));
 
 
 
