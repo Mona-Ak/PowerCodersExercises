@@ -4,7 +4,7 @@ let date = new Date();
 let year = date.getFullYear();
 let month = date.getMonth();
 let day = date.getDate();
-// let myDay = prompt('add you day of birth');
+let myDay = prompt('add you day of birth');
 let myMonth = prompt('add you month of birth');
 let myYear = prompt('add your year of birth');
 let display = document.querySelector('p');
@@ -65,7 +65,20 @@ let monthCalculator = (m , y)=>{
 
 monthCalculator(myMonth, yearCalculator(myYear));
 
+let dayCalculator = (d)=>{
+    if(day < d && daysNum[month] == 28 ){
+        currentDay = day - d + 28;
 
+    }else if(day < d && daysNum[month] == 30){
+        currentDay = day - d + 30;
+    }else if(day < d && daysNum[month] == 31 ){
+        currentDay = day - d + 31;
+    }else{
+        currentDay = day - d;
+    }
+}
+
+dayCalculator(myDay);
 
 
 
