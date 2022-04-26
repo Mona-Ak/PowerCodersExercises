@@ -1,5 +1,3 @@
-console.log(Math);
-
 let gcdFinder= (x , y) =>{
     let xNums = [];
     let yNums = [];
