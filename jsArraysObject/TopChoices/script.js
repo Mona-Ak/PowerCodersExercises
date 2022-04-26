@@ -16,9 +16,19 @@ let color = ['red', 'black','violet', 'white' ];
 // i++;
 // }
 
-for(const i of color){
-    console.log(`my favoriete color is ${i}`);
+// for(const i of color){
+//     console.log(`my favoriete color is ${i}`);
     
-}
+// }
+
+
+let presidentList = [
+    {lname: 'Putin',country: 'Russia'},
+    {lname: 'Biden', country: 'USA'}
+]
+presidentList.forEach(item =>{
+    console.log(`The president of ${item.country} is ${item.lname}.`);
+})
+
 
 
