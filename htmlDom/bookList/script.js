@@ -28,19 +28,31 @@ let books = [
 books.forEach(item => {
     let ul = document.createElement('ul');
     let img = document.createElement('img');
-    let bookTitle = document.createElement('li');
-    let bookAuthor = document.createElement('li');
-    let image = document.createElement('li'); 
+    let bookTitle = document.createElement('h1');
+    let bookAuthor = document.createElement('h2');
+    let list = document.createElement('li'); 
     img.src = item.url;
     img.width = 200;
     bookTitle.innerText = `Title : ${item.title}`;
     bookAuthor.innerText = `Author : ${item.author}`;
-    image.appendChild(img);
-    body.appendChild(image)
+    list.appendChild(img);
+    list.appendChild(bookTitle);
+    list.appendChild(bookAuthor);
+    ul.appendChild(list)
+    body.appendChild(ul);
 
-    ul.appendChild(bookTitle);
-    ul.appendChild(bookAuthor);
-    body.appendChild(ul)
+
+    list.style.listStyleType = 'none';
+    list.style.fontFamily = 'Arial'; 
+    ul.style.width = '300px';
+    if(item.alreadyRead){
+        ul.style.backgroundColor = 'maroon';
+        ul.style.color = 'white';
+        list.style.textDecoration = 'underline'
+    }else{
+        ul.style.backgroundColor = 'gray';
+        list.style.color = 'white';
+    }
 
     
 })
