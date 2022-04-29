@@ -24,6 +24,7 @@ for (var row = 0; row < ROWS_COUNT; row++) {
     for (var col = 0; col < COLS_COUNT; col++) {
         cells[row][col] = new Cell();
     }
+
 }
 
 //
@@ -70,6 +71,25 @@ function countAdjacentBombs(row, col) {
     //
     // TODO: Task 4 - Adjacent bombs are bombs in cells touching our cell (also diagonally). Implement this function so that it returns the count of adjacent cells with bombs in them. 
     //
+
+    let neighbor = cells[row][col + 1];
+
+    
+    // console.log(row + ' '+ col)
+    // console.log(row)
+    // console.log(col)
+    // console.log(cells[0][0]);
+    // for(let i = 0; i < cells.length; i++){
+    //     if(cells[i][i].isBomb){
+    //         console.log(cells[row][col + 1].isBomb)
+    //     }
+            
+    // }
+
+    // look down
+
+
+
     return 1;
 }
 
@@ -185,4 +205,20 @@ function onCellClicked(row, col, event) {
     checkForVictory();
     render();
 }
+
+// function getCellAt(row, col) {
+//     if (row >= 0 && row < ROWS_COUNT && col >= 0 && col < COLS_COUNT) {
+//         return cells[row][col];
+//     }
+//     return null;
+// }
+
+// function isThereABombAt(row, col) {
+//     let cell = getCellAt(row, col);
+//     if (cell == null) {
+//         return false;
+//     }
+//     return cell.isBomb;
+// }
+
 
