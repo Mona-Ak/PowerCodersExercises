@@ -1,0 +1,23 @@
+[
+    {
+        "username": "mona20",
+        "firstname":"Mona",
+        "lastname": "Akbarpour",
+        "age":20,
+        "password":"12345678"
+    },
+    {
+        "username":"jackJones",
+        "firstname":"Jack",
+        "lastname": "and jones",
+        "age":34,
+        "password":"12345678"
+    },
+    {
+        "username": "JustBieb",
+        "firstname":"Justin",
+        "lastname": "Bieber",
+        "age":27,
+        "password":"12345678"
+    }
+]
