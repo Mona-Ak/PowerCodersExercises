@@ -1,0 +1,21 @@
+html {
+    box-sizing: border-box;
+    font-size: 0.625em;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+* {
+    color: #1D1D1B;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+}
+body {
+    background: #F1F1F1;
+}
+h2 {
+    text-align: center;
+}
+.searchBox {
+    text-align: center;
+}
