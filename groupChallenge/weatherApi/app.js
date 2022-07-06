@@ -30,8 +30,6 @@ for(let i = 0;i<cities.length;i++){
 
 }
 
-
-
 const api = async (city) => {
     const responseLocation = await fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=5&appid=d46496675e65518b6787f569058b56eb`);
     const dataLocation = await responseLocation.json();

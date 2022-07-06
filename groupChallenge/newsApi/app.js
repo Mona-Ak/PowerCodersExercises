@@ -1,6 +1,6 @@
 const userInput = document.querySelector('input');
 const button = document.querySelector("button");
-const body = document.querySelector('body');
+const article = document.querySelector('article');
 let today = new Date();
 const time = `${today.getFullYear()}-${today.getMonth()}-${today.getDate()}`
 
@@ -20,14 +20,15 @@ button.addEventListener('click', (e)=> {
     const query = userInput.value;
     api(query)
     .then((data) => {
+        article.textContent = '';
         for(let i = 0; i < data.articles.length;i++){
                 const h1 = document.createElement('h1');
                 const image = document.createElement('img');
                 image.style.width = '300px';
                 h1.textContent = data.articles[i].title;
-                body.appendChild(h1);
+                article.appendChild(h1);
                 image.src = data.articles[i].urlToImage;
-                body.appendChild(image);
+                article.appendChild(image);
                 userInput.value = '';
             }
         })
